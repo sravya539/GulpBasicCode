@@ -1,0 +1,131 @@
+:root {
+    --main-blue: #160091;
+    --main-blue-light: rgb(62, 152, 255);
+    --space-blue: #0f0c22;
+    --background-color01: rgb(233, 233, 233);
+    --textbright: rgb(233, 233, 233);
+    --textdark: rgb(26, 26, 26);
+    --highlightcolor01: rgb(224, 90, 0);
+    --radial-background01: radial-gradient(rgba(43, 55, 96, 1), rgb(6, 12, 32));
+    --box-shadow01: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --drop-shadow01: drop-shadow(0 0 0.55rem rgb(68, 68, 221, 0.7));
+  }
+  
+@import url(./typography.css);
+@import url(./colors.css);
+@import url(./normalizeNC.css);
+
+@import url(./layout/header.css);
+@import url(./layout/hero01.css);
+
+/* ---------  GLOBAL STYLES  --------- */
+:root {
+  --main-border-radius: 5px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 13pt;
+  min-width: 320px;
+}
+
+body {
+  background: var(--radial-background01);
+  background-attachment: fixed;
+}
+body,
+label,
+input,
+textarea {
+  font-family: Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin: 0.7rem;
+  letter-spacing: 3px;
+  color: red;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0.7rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 0.3rem;
+  letter-spacing: 3px;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+}
+
+h6 {
+  font-size: 0.7rem;
+}
+
+p,
+span {
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: 1.5px;
+  margin: 0.3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+i {
+  color: var(--textbright);
+}
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero01 {
+    display: flex;
+    width: 100%;
+    height: 88vh;
+    flex-direction: column;
+    background-color: var(--radial-background01);
+    color: var(--textbright);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .content-section1 {
+    margin-top: 180px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero01 {
+      height: 78vh;
+    }
+  }
+/*# sourceMappingURL=style.css.map */
